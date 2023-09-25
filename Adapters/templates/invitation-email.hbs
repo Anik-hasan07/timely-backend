@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<title>Invitation to Join {{projectName}}</title>
+		{{!-- prettier-ignore --}}
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+h4 {
+            color: #040404;
+            padding: 25px 0px 0px 25px;
+            margin-left: 20px;
+        }
+
+        p {
+            color: #444444;
+            padding-left: 25px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 15px;
+            padding: 10px 25px;
+            background-color: #ef821d;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto; 
+            background-color: #f7f1ea;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .mainContent{
+            max-width: 550px;
+            background-color:white;
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+    </style>
+	</head>
+	<body>
+		<div class='container'>
+
+			<h4>Hello there,</h4>
+
+			<p style='margin-left: 20px;'>You are invited to join the "{{projectName}}"
+				project on Timely!</p>
+			<div class='mainContent'>
+				<p>Timely is a powerful project management tool that helps teams
+					collaborate effectively and stay organized. As a member of the "{{projectName}}"
+					project, you will have access to all the project details, tasks,
+					deadlines, and team discussions.</p>
+
+				<p>To accept the invitation and join the project, please click on the
+					following link:</p>
+
+				<a href='{{invitationLink}}'>Accept Invitation</a>
+
+				<p>Once you have accepted the invitation, you will have access to the
+					project's tasks, discussions, and other project-related information.</p>
+
+				<p>If you have any questions or need assistance, please feel free to
+					contact the project administrator.</p>
+
+				<p>We're excited to have you on board!</p>
+			</div>
+
+			<h4>Best regards,</h4>
+			<p style='margin-top: -15px;margin-bottom:25px;margin-left:20px'>The
+				Timely Team</p>
+		</div>
+	</body>
+</html>

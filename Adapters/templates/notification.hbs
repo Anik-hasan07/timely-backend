@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<title>Notification from Timely</title>
+		{{!-- prettier-ignore --}}
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        h4 {
+            color: #080808;
+        }
+        p {
+            color: #444444;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:  #f7f1ea;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .notification-card {
+            background-color:white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .notification-header {
+            margin-bottom: 5px;
+        }
+        .notification-header h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .notification-body p {
+            margin-bottom: 5px;
+            color: #444444;
+        }
+        .notification-timestamp {
+            font-size: 12px;
+            color: #888;
+        }
+        .notification-body{
+            background-color:white;
+        }
+    </style>
+	</head>
+	<body>
+		<div class='container'>
+			<h2>Dear {{name}},</h2>
+
+			<p>This is to inform you about a recent update or event related to Timely
+				account. Please review the details below:</p>
+
+			<div class='notification-card'>
+				<div class='notification-header'>
+					<h3>{{projectName}} / {{taskNumber}}</h3>
+					<p>Task Name: {{taskName}}</p>
+				</div>
+				<div class='notification-body'>
+					<p>Story point : {{storyPoint}} </p>
+					<p>Project : {{projectName}} </p>
+					<p>Updated By: {{updatedByName}} </p>
+					<p>If you have any questions or need further assistance, please don't
+						hesitate to reach out to our support team at
+						<a href='mailto:support@timely.com'>support@timely.com</a>
+						or visit our help center at
+						<a href='mailto:help@timely.com'>help@timely.com</a>
+					</p>
+
+					<p class='notification-timestamp'>{{updatedOn}}</p>
+				</div>
+			</div>
+
+			<h4>Thank you for using Timely!</h4>
+
+			<p>Best regards,</p>
+			<p>The Timely Team</p>
+		</div>
+	</body>
+</html>

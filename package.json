@@ -1,0 +1,37 @@
+{
+	"name": "timely-api",
+	"version": "1.0.0",
+	"description": "api service for Timely",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"test": "jest --watchAll",
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "SpringRain",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^29.4.3",
+		"nodemon": "^2.0.20",
+		"supertest": "^6.3.3"
+	},
+	"dependencies": {
+		"@koa/multer": "^3.0.0",
+		"axios": "^0.26.1",
+		"bunyan": "^1.8.15",
+		"dotenv": "^5.0.1",
+		"handlebars": "^4.7.7",
+		"jsonwebtoken": "^9.0.0",
+		"koa": "^2.5.0",
+		"koa-body": "^4.1.0",
+		"koa-router": "^7.2.1",
+		"koa2-cors": "^2.0.6",
+		"mongoose": "^6.9.1",
+		"nodemailer": "^6.9.1",
+		"useragent": "^2.3.0",
+		"uuid": "^9.0.0",
+		"validatorjs": "^3.22.1"
+	}
+}
